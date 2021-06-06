@@ -7,6 +7,11 @@ import (
 	"jksjHomework/utils"
 )
 
+/*
+dao 层中当遇到一个 sql.ErrNoRows 的时候，应该 Wrap 这个 error，抛给上层处理。
+原因：dao层不处理业务逻辑，遇到error 应该保存堆栈信息，交由调用层处理
+*/
+
 func main() {
 	user, err := GetUserByID()
 	if err != nil {
