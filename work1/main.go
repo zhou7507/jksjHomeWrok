@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	errors "github.com/pkg/errors"
-	"jksjHomework/utils"
+	utils "jksjHomework/work1/utils"
 )
 
 /*
