@@ -10,6 +10,12 @@ import (
 )
 
 //1. 基于 errgroup 实现一个 http server 的启动和关闭 ，以及 linux signal 信号的注册和处理，要保证能够一个退出，全部注销退出。
+/**
+Wait() 通过 waitgroup.Wait() 实现阻塞等待；
+WithContext() 通过 context.WithCancel(ctx), 设定返回的cancel 方法，来级联取消其他 child context 的goroutine
+Go() 通过 Once 实现执行一次 cancel() 操作，并记录第一个出错信息
+
+*/
 func main() {
 	ctx := context.Background()
 	// 定义 withCancel -> cancel() 方法 去取消下游的 Context
