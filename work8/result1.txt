@@ -1,0 +1,163 @@
+redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 10 -t set,get
+====== SET ======
+  10000 requests completed in 0.13 seconds
+  50 parallel clients
+  10 bytes payload
+  keep alive: 1
+
+98.37% <= 1 milliseconds
+100.00% <= 1 milliseconds
+76335.88 requests per second
+
+====== GET ======
+  10000 requests completed in 0.13 seconds
+  50 parallel clients
+  10 bytes payload
+  keep alive: 1
+
+99.70% <= 1 milliseconds
+100.00% <= 1 milliseconds
+76335.88 requests per second
+
+
+
+redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 20 -t set,get
+====== SET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  20 bytes payload
+  keep alive: 1
+
+98.56% <= 1 milliseconds
+100.00% <= 1 milliseconds
+69930.07 requests per second
+
+====== GET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  20 bytes payload
+  keep alive: 1
+
+98.95% <= 1 milliseconds
+99.51% <= 9 milliseconds
+99.84% <= 10 milliseconds
+100.00% <= 10 milliseconds
+68965.52 requests per second
+
+
+
+ redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 50 -t set,get
+====== SET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  50 bytes payload
+  keep alive: 1
+
+98.38% <= 1 milliseconds
+100.00% <= 1 milliseconds
+70422.53 requests per second
+
+====== GET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  50 bytes payload
+  keep alive: 1
+
+99.73% <= 1 milliseconds
+100.00% <= 1 milliseconds
+72992.70 requests per second
+
+
+
+ redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 100 -t set,get
+====== SET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  100 bytes payload
+  keep alive: 1
+
+97.98% <= 1 milliseconds
+100.00% <= 1 milliseconds
+72463.77 requests per second
+
+====== GET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  100 bytes payload
+  keep alive: 1
+
+98.87% <= 1 milliseconds
+100.00% <= 1 milliseconds
+71942.45 requests per second
+
+
+
+ redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 200 -t set,get
+====== SET ======
+  10000 requests completed in 0.13 seconds
+  50 parallel clients
+  200 bytes payload
+  keep alive: 1
+
+98.94% <= 1 milliseconds
+100.00% <= 1 milliseconds
+74626.87 requests per second
+
+====== GET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  200 bytes payload
+  keep alive: 1
+
+99.18% <= 1 milliseconds
+100.00% <= 1 milliseconds
+74074.07 requests per second
+
+
+
+ redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 1000 -t set,get
+====== SET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  1000 bytes payload
+  keep alive: 1
+
+97.68% <= 1 milliseconds
+100.00% <= 2 milliseconds
+69444.45 requests per second
+
+====== GET ======
+  10000 requests completed in 0.14 seconds
+  50 parallel clients
+  1000 bytes payload
+  keep alive: 1
+
+99.52% <= 1 milliseconds
+100.00% <= 1 milliseconds
+74074.07 requests per second
+
+redis-benchmark -h 127.0.0.1 -p 6379 -c 50 -n 10000 -d 5000 -t set,get
+====== SET ======
+  10000 requests completed in 0.15 seconds
+  50 parallel clients
+  5000 bytes payload
+  keep alive: 1
+
+98.77% <= 1 milliseconds
+100.00% <= 1 milliseconds
+65789.48 requests per second
+
+====== GET ======
+  10000 requests completed in 0.16 seconds
+  50 parallel clients
+  5000 bytes payload
+  keep alive: 1
+
+97.75% <= 1 milliseconds
+99.51% <= 8 milliseconds
+99.58% <= 9 milliseconds
+99.88% <= 10 milliseconds
+100.00% <= 10 milliseconds
+60975.61 requests per second
+
+

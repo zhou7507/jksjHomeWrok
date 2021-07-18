@@ -1,4 +1,4 @@
-module jksjHomework
+module geekTimeWork
 
 go 1.16
 
